@@ -40,6 +40,21 @@
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
+
+        <dependency>
+            <groupId>io.hawt</groupId>
+            <artifactId>hawtio-springboot</artifactId>
+            <version>1.5.8</version>
+        </dependency>
+        <dependency>
+            <groupId>io.hawt</groupId>
+            <artifactId>hawtio-core</artifactId>
+            <version>1.5.8</version>
+        </dependency>
+        <dependency>
+            <groupId>org.jolokia</groupId>
+            <artifactId>jolokia-core</artifactId>
+        </dependency>
     </dependencies>
 
     <build>
@@ -55,7 +70,7 @@
                 <version>1.5.8</version>
                 <configuration>
                     <logClasspath>true</logClasspath>
-                    <port>8090</port>
+                   <!--  <port>8090</port> -->
                     <mainClass>com.routing.camelrouting.CamelroutingApplication</mainClass>
                 </configuration>
             </plugin>
